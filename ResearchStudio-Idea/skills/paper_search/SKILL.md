@@ -1,9 +1,14 @@
 ---
-name: paper-search
-description: Search papers across arXiv, DBLP, OpenAlex, OpenReview, Semantic Scholar, and Crossref for a given query and year range, using ./scripts/search_papers.py. Use when the user asks to find papers, related work, prior art, or recent publications on a specific topic, especially when they mention a date range or specific venues like NeurIPS, ICLR, or ICML.
+name: project-research
+description: Research tools, projects, workflows, models, documentation, products, competitors, and reference material for a personal project. Use when the user asks what already exists, wants source-backed options, or needs evidence before choosing an approach. This is adapted from Microsoft's paper-search workflow; it is not limited to academic papers.
 ---
 
-# Paper Search Skill
+# Project Research Skill
+
+<!-- Personal adaptation: this skill keeps the original multi-source search engine,
+but its trigger and interpretation are intentionally broadened beyond scientific
+papers. The connector implementation remains unchanged until a later, tested
+replacement is available. -->
 
 Unified paper search across **arXiv**, **DBLP**, **OpenAlex**, **OpenReview**
 (NeurIPS / ICLR / ICML), **Semantic Scholar**, and **Crossref** using

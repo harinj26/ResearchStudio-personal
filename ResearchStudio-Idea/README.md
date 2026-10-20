@@ -1,6 +1,10 @@
-# ResearchStudio - <img src="https://raw.githubusercontent.com/ai-nuts/Storage/main/ResearchStudio/ResearchStudio-Idea/docs/figures/idea-wordmark.png" alt="Idea" height="28">
+# PersonalStudio - <img src="https://raw.githubusercontent.com/ai-nuts/Storage/main/ResearchStudio/ResearchStudio-Idea/docs/figures/idea-wordmark.png" alt="Idea" height="28">
 
-> From a research problem to a reviewer-defensible idea card — Automating the First Mile of Research Ideation.
+> From a rough project direction to a practical, testable project brief.
+
+This fork adapts Microsoft's ResearchStudio-Idea workflow for personal AI,
+media, software, automation, and product projects. See
+[`PERSONALIZATION.md`](../PERSONALIZATION.md) for the adaptation boundary.
 
 **ResearchStudio - Idea** streamlines the *first* steps of a research project — the thinking that has to happen *before* any writing. Drop in a research problem and **IdeaSpark** runs the full pipeline end-to-end — read the field → find the bottleneck → choose the ideation pattern → draft the idea → check prior art → audit & revise → render the card — and hands back one reviewer-defensible, **implementable** idea card. Every step is grounded in a 1,947-paper ICLR / ICML / NeurIPS corpus (2021–2025) and its induced taxonomy of **15 ideation patterns** and **31 sub-patterns** — and **faithful by construction**: every load-bearing claim either traces to a retrieved record or is flagged as model-supplied.
 
@@ -24,13 +28,13 @@
 
 ## The skills
 
-Three skills compose into one research-ideation loop — **search → generate → review** — with **IdeaSpark** the end-to-end flagship and the other two usable standalone:
+Three skills compose into one personal-project loop — **research → brief → differentiate** — and can also be used standalone:
 
 | Skill | Input | Output | Built for |
 |---|---|---|---|
-| [**Idea-Spark**](skills/idea_spark/SKILL.md)| A research problem / direction (optional constraints, seed papers, compute) | one reviewer-defensible, implementable idea card — Title · Motivation · Method, as Markdown + PDF | the **full research-problem → idea-card pipeline**, calibrated against Oral-accepted papers |
-| [**Paper-Search**](skills/paper_search/SKILL.md) | A query + year range (optional venues) | a deduped paper list across arXiv / DBLP / OpenAlex / OpenReview / Semantic Scholar / Crossref | the literature-grounding building block, usable on its own |
-| [**Scoop-Check**](skills/scoop_check/SKILL.md) | A problem statement + a claimed novelty | a prior-art collision verdict: an overlap level + the closest prior works, per axis | a standalone "has this been done?" prior-art check on one novelty claim |
+| [**Project Brief**](skills/idea_spark/SKILL.md)| A rough project direction plus constraints | one scoped project brief with outcome, method, resources, risks, and a smallest useful experiment | the full direction → plan workflow |
+| [**Project Research**](skills/paper_search/SKILL.md) | A project question and optional time range | source-backed results about tools, workflows, products, documentation, and existing approaches | evidence gathering |
+| [**Differentiation Check**](skills/scoop_check/SKILL.md) | A project problem plus proposed distinctive approach | an overlap assessment and practical positioning delta | "what is different and why would it matter?" |
 
 ---
 

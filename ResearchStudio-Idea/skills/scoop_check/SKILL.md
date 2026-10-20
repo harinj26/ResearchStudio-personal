@@ -1,9 +1,13 @@
 ---
-name: scoop-check
-description: Check whether a proposed research novelty (given a problem statement and claimed idea/novelty) overlaps with existing published work. TRIGGER when the user asks to verify research novelty, check if an idea is new, compare a proposed contribution to prior art, do a literature/prior-art search for a specific claim, or assess whether a paper idea has been scooped. DO NOT TRIGGER for general literature reviews unrelated to a specific novelty claim, or for writing related-work sections of an already-validated idea.
+name: differentiation-check
+description: Check whether a proposed personal project, product, workflow, feature, or content idea is meaningfully different from existing tools and approaches. Use when the user asks whether an idea is already done, what makes it distinctive, or how to position it. Do not present the result as legal or intellectual-property advice.
 ---
 
-# Scoop Check
+# Differentiation Check
+
+<!-- Personal adaptation: “novelty” becomes practical differentiation. The output
+should identify overlap, useful differences, and a concrete positioning delta;
+it must not claim patentability or guarantee originality. -->
 
 Systematically verify whether a proposed research novelty overlaps with existing literature. The goal is to either (a) surface prior work that already covers the claim, or (b) produce a crisp, defensible "delta" statement that distinguishes the proposed contribution.
 
@@ -11,8 +15,8 @@ Systematically verify whether a proposed research novelty overlaps with existing
 
 This skill requires exactly **two inputs** from the user:
 
-1. **Research problem** — the specific issue, challenge, or gap in knowledge being addressed.
-2. **Novelty** — the specific claimed contribution (new method, theorem, dataset, framing, or insight) that distinguishes this work from prior art.
+1. **Project problem** — the user, creator, or workflow problem being addressed.
+2. **Distinctive proposal** — the feature, approach, experience, or constraint that is supposed to make the project different.
 
 If either input is missing, vague, or conflated (e.g., the "novelty" merely restates the problem), infer the most reasonable interpretation and proceed immediately. Do **not** use `AskUserQuestion` or pause for confirmation at any point — always proceed directly through every step.
 

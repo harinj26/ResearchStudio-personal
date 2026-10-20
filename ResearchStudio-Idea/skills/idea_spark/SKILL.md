@@ -1,14 +1,18 @@
 ---
-name: idea-spark
+name: project-brief
 description: >-
-  Generate ONE reviewer-defensible, implementable research idea with a concrete
-  method and falsification plan from a stated research direction. Use when the
-  user asks for a research idea, novelty analysis, bottleneck diagnosis, or
-  paper-shape suggestion. Skip code review, debugging, and unconstrained
-  brainstorming without research context.
+  Turn a rough personal-project direction into one practical, testable project
+  brief with a clear outcome, evidence, implementation path, risks, and smallest
+  useful experiment. Use for local AI, media, software, automation, content, or
+  product ideas. Skip debugging and unconstrained brainstorming.
 ---
 
-# Idea Spark
+# Project Brief
+
+<!-- Personal adaptation: this skill preserves the original evidence and
+validation discipline, while changing the deliverable from a research idea card
+to a practical project brief. Scientific claims and paper-specific language
+must not be introduced unless the user explicitly asks for them. -->
 
 Generate one literature-grounded research proposal with a concrete mechanism and honest
 falsification plan. A completed proposal is NOT evidence that the method works, is novel,
