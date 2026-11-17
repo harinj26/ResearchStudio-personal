@@ -20,3 +20,6 @@ A personal copy of ResearchStudio: a collection of agent skills covering the res
 - Never commit `.env`, credentials, cookies or saved login sessions. New variables go in `.env.example` with empty values.
 - Do not commit dependencies (`.venv`, `node_modules`), build output or large media.
 - Ask before deleting files, changing Git history, or pushing.
+
+## Current state
+<!-- Updated at each handoff: what works, what is in progress, what is next. -->
